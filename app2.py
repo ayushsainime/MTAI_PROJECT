@@ -8,7 +8,10 @@ st.set_page_config(layout="wide")
 
 # --- Title and Subheading ---
 st.title("Workshop Tool Usage Analysis Dashboard")
-st.subheader("An interactive overview of tool efficiency and usage patterns.")
+st.subheader("an interactive tool to view tool usage and analysis  ")
+st.subheader("----------------------------------------------- ")
+
+st.subheader("MTAI PROJECT GROUP 2 ")
 
 # --- Data Loading and Caching ---
 @st.cache_data
@@ -136,3 +139,4 @@ except FileNotFoundError:
     st.error("The data file 'tool_usage_data.xlsx' was not found. Please make sure it's in the same directory as the app.")
 except Exception as e:
     st.error(f"An error occurred: {e}")
+
