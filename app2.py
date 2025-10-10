@@ -13,6 +13,32 @@ st.subheader("----------------------------------------------- ")
 
 st.subheader("MTAI PROJECT GROUP 2 ")
 
+st.markdown("""
+**1. Single Point Cutting Tool (Turning)**
+- **Tool Material:** Coated Carbide (P-grade TiN/TiAlN)
+- **Cutting Speed (V):** 150 m/min
+- **Feed (f):** 0.25 mm/rev
+- **Depth of Cut (ap):** 2 mm
+- **Tool Life:** ≈ 60 minutes
+- **Work Material:** Mild Steel (AISI 1045)
+
+**2. Milling Cutter (End Milling)**
+- **Tool Material:** Solid Carbide (TiAlN coated)
+- **Cutting Speed (V):** 180 m/min
+- **Feed per Tooth (fₙ):** 0.06 mm/tooth
+- **Axial Depth (ap):** 3 mm
+- **Radial Depth (ae):** 2 mm
+- **Tool Life:** ≈ 90 minutes
+- **Work Material:** Mild Steel (AISI 1045)
+
+**3. Drilling Bit (Twist Drill)**
+- **Tool Material:** Cobalt HSS (M35)
+- **Cutting Speed (V):** 25 m/min
+- **Feed (f):** 0.20 mm/rev
+- **Tool Life:** ≈ 25 minutes
+- **Work Material:** Mild Steel (AISI 1045)
+""")
+
 # --- Data Loading and Caching ---
 @st.cache_data
 def load_initial_data(file_path):
@@ -139,4 +165,5 @@ except FileNotFoundError:
     st.error("The data file 'tool_usage_data.xlsx' was not found. Please make sure it's in the same directory as the app.")
 except Exception as e:
     st.error(f"An error occurred: {e}")
+
 
